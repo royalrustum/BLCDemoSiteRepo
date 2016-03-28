@@ -10,8 +10,7 @@
     <name>ecommerce</name>
     <url>http://www.blc-archetype.com</url>
     <properties>
-        <blc.version>4.0.5-GA</blc.version>
-        <blc.menu.version>1.0.0-GA</blc.menu.version>
+        <blc.version>4.0.10-SNAPSHOT</blc.version>
         <tomcat.conf.dir.name>tomcat-server-conf</tomcat.conf.dir.name>
         
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -239,11 +238,9 @@
                     <dependencies>
                         <!-- Other dependencies -->
                         <dependency>
-                            <groupId>org.hsqldb</groupId>
-                            <artifactId>hsqldb</artifactId>
-                            <version>2.3.1</version>
-                            <type>jar</type>
-                            <scope>compile</scope>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
+                            <version>5.1.32</version>
                         </dependency>
                         <dependency>
                             <groupId>commons-dbcp</groupId>
@@ -328,13 +325,6 @@
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-open-admin-platform</artifactId>
                 <version>${blc.version}</version>
-                <type>jar</type>
-                <scope>compile</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.broadleafcommerce</groupId>
-                <artifactId>broadleaf-menu</artifactId>
-                <version>${blc.menu.version}</version>
                 <type>jar</type>
                 <scope>compile</scope>
             </dependency>
