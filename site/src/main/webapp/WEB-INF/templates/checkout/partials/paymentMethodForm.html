@@ -15,7 +15,7 @@
                     <b th:utext="${unconfirmedCC.initialTransaction.additionalFields['CARD_TYPE']}"/><br/>
                     <span th:utext="${unconfirmedCC.initialTransaction.additionalFields['NAME_ON_CARD']}"></span><br/>
                     ****<span th:utext="${unconfirmedCC.initialTransaction.additionalFields['LAST_FOUR']}"/><br/>
-                    <span th:utext="#{confirmation.exp}">exp.</span> <span th:utext="${unconfirmedCC.initialTransaction.additionalFields['EXP_DATE']}"/>
+                    <span th:utext="#{confirmation.exp}">exp.</span> <span th:utext="${unconfirmedCC.initialTransaction.additionalFields['EXP_DATE']}"></span>
                 </div>
             </div>
         </ul>

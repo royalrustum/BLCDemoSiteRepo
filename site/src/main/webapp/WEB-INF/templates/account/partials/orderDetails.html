@@ -19,7 +19,7 @@
                     <tr >
                       <td>
                         <div th:object="${orderItem}" th:remove="tag">
-                            <div class="productOptions" th:substituteby="catalog/partials/offers :: orderDetails"/>
+                            <div class="productOptions" th:substituteby="catalog/partials/offers :: orderDetails"></div>
                           
                          </div>
                       </td>
@@ -109,12 +109,12 @@
                     <div th:if="${payment.active}" class="payment-method">
                         <h4>Payment Method</h4>
                         Payment type: [[*{type.friendlyType}]]<br/>
-                        Amount paid: <span blc:price="*{amount}" />
+                        Amount paid: <span blc:price="*{amount}" ></span>
                         <div th:if="${payment.initialTransaction != null}">
                             <div th:if="!*{#strings.isEmpty(initialTransaction.additionalFields['CARD_TYPE'])}">
                             <b th:utext="*{initialTransaction.additionalFields['CARD_TYPE']}"/><br/>
                             ****<span th:utext="*{initialTransaction.additionalFields['LAST_FOUR']}"/><br/>
-                            <span th:utext="#{confirmation.exp}">exp.</span> <span th:utext="*{initialTransaction.additionalFields['EXP_DATE']}"/>
+                            <span th:utext="#{confirmation.exp}">exp.</span> <span th:utext="*{initialTransaction.additionalFields['EXP_DATE']}"></span>
                             </div>
                             <div th:if="!*{#strings.isEmpty(initialTransaction.additionalFields['ACCOUNT_CREDIT_NUM'])}">
                                 <span th:utext="#{cart.accountCredit.accounts}">Accounts</span><br/>

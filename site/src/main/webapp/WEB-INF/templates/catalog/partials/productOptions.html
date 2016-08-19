@@ -1,5 +1,5 @@
 <div class="product-options hidden" th:fragment="productOptions">
-    <blc:product_options productId="*{id}" />
+    <blc:product_options productId="*{id}" ></blc:product_options>
     <div id="product-option-data" hidden="hidden" th:attr="data-product-option-pricing=${skuPricing}, data-product-options=${allProductOptions}"></div>
     <ul>
         <li th:each="productOption : *{productOptions}" th:object="${productOption}" class="product-option-group cf" th:classappend="*{type.type == 'COLOR'}? 'colors'">
@@ -15,7 +15,7 @@
                     </select> 
                 </li>                             
                 <li th:case="'TEXTAREA'">
-                    <textarea th:name="${'itemAttributes[' + productOption.attributeName + ']'}" value="" th:type="*{type}" th:required="*{required}" />
+                    <textarea th:name="${'itemAttributes[' + productOption.attributeName + ']'}" value="" th:type="*{type}" th:required="*{required}" ></textarea>
                 </li>
                 <li th:case="'DECIMAL'">
                     <input th:name="${'itemAttributes[' + productOption.attributeName + ']'}" value="" th:type="*{type}" th:required="*{required}" maxlength="10" />

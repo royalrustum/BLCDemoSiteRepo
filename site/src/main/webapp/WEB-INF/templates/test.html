@@ -42,8 +42,8 @@
             </div>
             <div>
                 <h2>Legacy Google Analytics Tests</h2>
-                <blc:googleanalytics ordernumber="${order?.orderNumber}"/>
-                <script th:utext="${analytics}"/>
+                <blc:googleanalytics ordernumber="${order?.orderNumber}"></blc:googleanalytics>
+                <script th:utext="${analytics}"></script>
                 <span>*note* the head tests the non-legacy version of this</span>
             </div>
             <div>
@@ -93,7 +93,7 @@
             </div>
             <div th:object="${product}">
                 <h2>ProductOptionsProcessor Test</h2>
-                <blc:product_options productId="*{id}" />
+                <blc:product_options productId="*{id}" ></blc:product_options>
                 <div id="product-option-data" hidden="hidden" th:attr="data-product-option-pricing=${skuPricing}, data-product-options=${allProductOptions}"></div>
                 <ul>
                     <li th:each="productOption : *{productOptions}" th:object="${productOption}" class="product-option-group cf" th:classappend="*{type.type == 'COLOR'}? 'colors'">
@@ -109,7 +109,7 @@
                                 </select> 
                             </li>                             
                             <li th:case="'TEXTAREA'">
-                                <textarea th:name="${'itemAttributes[' + productOption.attributeName + ']'}" value="" th:type="*{type}" th:required="*{required}" />
+                                <textarea th:name="${'itemAttributes[' + productOption.attributeName + ']'}" value="" th:type="*{type}" th:required="*{required}" ></textarea>
                             </li>
                             <li th:case="'DECIMAL'">
                                 <input th:name="${'itemAttributes[' + productOption.attributeName + ']'}" value="" th:type="*{type}" th:required="*{required}" maxlength="10" />
@@ -159,7 +159,7 @@
             <div>
                 <h2>RatingsProcessor Test</h2>
                 <div id="customer-reviews-container">
-                    <blc:ratings itemId="${product.id}" />
+                    <blc:ratings itemId="${product.id}" ></blc:ratings>
                     <div th:if="${ratingSummary}" th:object="${ratingSummary}">
                         <span class="title">Community Rating</span>
                         <div id="community-rating-container">
@@ -191,7 +191,7 @@
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                            <blc:ratings itemId="${product.id}" />
+                            <blc:ratings itemId="${product.id}" ></blc:ratings>
                             <div th:if="${currentCustomerReview}" th:object="${currentCustomerReview}" class="customer-reviews current-customer-review">
                                 <h4>Your Review</h4>
                                 <p class="voting-summary" th:if="*{notHelpfulCount()} + *{helpfulCount()} > 0">
@@ -252,7 +252,7 @@
             </div>
             <div>
                 <h2>CategoriesProcessor Test</h2>
-                <blc:categories resultVar="categories" parentCategory="Merchandise" />
+                <blc:categories resultVar="categories" parentCategory="Merchandise" ></blc:categories>
                 <ul>
                     <li th:each="cat : ${categories}">
                         <span th:text="${cat.name}"></span>
@@ -261,7 +261,7 @@
             </div>
             <div>
                 <h2>NamedOrderProcessor Test</h2>
-                <blc:named_order orderVar="wishlist" orderName="wishlist" />
+                <blc:named_order orderVar="wishlist" orderName="wishlist" ></blc:named_order>
                 <ul th:unless="${#lists.isEmpty(wishlist.orderItems)}">
                     <li th:each="orderItem : ${wishlist.orderItems}">
                         <span th:text="${orderItem.name}"></span>

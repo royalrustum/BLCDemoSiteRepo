@@ -23,7 +23,7 @@
                 <li th:each="sku : ${skus}" th:object="${sku}" th:include="catalog/partials/skuListItem" class="product_container"></li>
             </ul>
             
-            <div th:substituteby="catalog/partials/productPagingOptions" />
+            <div th:substituteby="catalog/partials/productPagingOptions" ></div>
             
         </section>
     
@@ -31,9 +31,9 @@
             <header><span th:utext="#{category.filterResults}">Filter your results</span></header>
             <div id="options">
                 
-                <div th:substituteby="catalog/partials/facetFilter" />
+                <div th:substituteby="catalog/partials/facetFilter" ></div>
                 
-                <div th:substituteby="catalog/partials/rightHandBannerAds" />
+                <div th:substituteby="catalog/partials/rightHandBannerAds" ></div>
                 
                 <section id="right_column">
                     <header><span th:utext="#{category.featuredProducts}">Featured Products</span></header>

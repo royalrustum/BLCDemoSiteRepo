@@ -10,7 +10,7 @@
             <h3><span th:utext="#{cart.currentSubtotal}">Your Current Subtotal</span></h3>
             <div id="subtotal" th:unless="${cart.subTotal?.zero}" blc:price="${cart.subTotal?.subtract(cart.orderAdjustmentsValue)}"></div>
             <div id="orderDiscounts" th:unless="${cart.orderAdjustmentsValue.zero}">
-                <span th:utext="#{cart.orderDiscount}">Order Discount</span>: <span blc:price="${cart.orderAdjustmentsValue}" />
+                <span th:utext="#{cart.orderDiscount}">Order Discount</span>: <span blc:price="${cart.orderAdjustmentsValue}" ></span>
             </div>
             <p><span th:utext="#{cart.subtotalDisclaimer}">Subtotal does not yet include applicable tax or shipping and handling charges</span>.</p>
             <div id="checkout">

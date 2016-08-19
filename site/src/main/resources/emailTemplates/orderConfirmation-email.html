@@ -196,12 +196,12 @@
                                                         Payment Method
                                                     </h3>          
                                                     Payment type: [[*{type.friendlyType}]]<br/>
-                                                    Amount paid: <span blc:price="*{amount}" />
+                                                    Amount paid: <span blc:price="*{amount}" ></span>
                                                     <div th:if="${payment.initialTransaction != null}">
                                                         <div th:if="!*{#strings.isEmpty(initialTransaction.additionalFields['CARD_TYPE'])}">
                                                             <b th:utext="*{initialTransaction.additionalFields['CARD_TYPE']}"/><br/>
                                                             ****<span th:utext="*{initialTransaction.additionalFields['LAST_FOUR']}"/><br/>
-                                                            <span th:utext="#{confirmation.exp}">exp.</span> <span th:utext="*{initialTransaction.additionalFields['EXP_DATE']}"/>
+                                                            <span th:utext="#{confirmation.exp}">exp.</span> <span th:utext="*{initialTransaction.additionalFields['EXP_DATE']}"></span>
                                                             <address>
                                                                 [[*{billingAddress.firstName == null ? '' : billingAddress.firstName}]]&nbsp;[[*{billingAddress.lastName == null ? '' : billingAddress.lastName}]]<br/>
                                                                 [[*{billingAddress.phonePrimary?.phoneNumber == null ? '' : billingAddress.phonePrimary?.phoneNumber}]]<br/>
