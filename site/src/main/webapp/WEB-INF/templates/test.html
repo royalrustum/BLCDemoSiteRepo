@@ -271,7 +271,8 @@
             </div>
             <div>
                 <h2>RelatedProductProcessor Test</h2>
-                <blc:related_products productId="${product.id}"/>   
+                <blc:related_products productId="${product.id}"></blc:related_products>
+   
                 <ul id="featured_products" class="group">
                     <li th:each="relatedProduct : ${relatedProducts}" th:object="${relatedProduct.relatedProduct}" th:include="catalog/partials/productListItem" class="product_container"></li>
                 </ul>
