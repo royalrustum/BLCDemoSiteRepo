@@ -27,10 +27,12 @@
     <aop:config/>
     
     <!--  Checks for a URL match to a product's SEO URL.   -->
-    <bean class="org.broadleafcommerce.core.web.catalog.SkuHandlerMapping">
+    <bean
+    	class="org.broadleafcommerce.core.web.catalog.SkuHandlerMapping"
+    	lazy-init="false">
       <property name="order" value="2"/>
     </bean>
-    
+
     <bean class="org.broadleafcommerce.core.web.catalog.ProductHandlerMapping">
       <property name="order" value="3"/>
     </bean>
