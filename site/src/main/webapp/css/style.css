@@ -13,7 +13,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font: 12px/18px Georgia, serif; color: #655c5a; background: url(../img/canvas.jpg) repeat; }
+body { margin: 0; font: 12px/18px Georgia, serif; color: #655c5a; }
 
 ::-moz-selection { background: #E40037; color: #fff; text-shadow: none; }
 ::selection { background: #E40037; color: #fff; text-shadow: none; }
@@ -256,10 +256,10 @@ span.error_spacer {
 
 header {
     width: 100%;
-    color: #342020;
+    color: #007dc6;
     font: 15px/28px 'Open Sans', Helvetica, sans-serif;
     font-weight: 600;
-    border-top: 15px solid #E40037;
+    border-top: 15px solid #007dc6;
 }
 
 #header_content {
@@ -269,8 +269,7 @@ header {
 }
 
 #header_content_fixed {
-    border-bottom: 15px solid #E40037;
-    background: url(../img/canvas.jpg) repeat;
+    border-bottom: 15px solid #007dc6;
     width: 100%;
     position: fixed;
     top: 0;
@@ -370,7 +369,7 @@ header {
 
     #header_content #cart_info {
         padding: 10px 20px;
-        background-color: #E40037;
+        background-color: #007dc6;
         color: white;
         text-align: right;
         float: right;
@@ -1940,7 +1939,7 @@ input[type="submit"].small, a.small-button {
 
 input[type="submit"].red, a.red-button, a.addToCart, .addToCart {
     color: white;
-    background-color: #E40037;
+    background-color: #007dc6;
 }
 
 input[type="submit"].dark, a.dark-button, #featured_products .addToCart {
@@ -2025,7 +2024,7 @@ and (max-width : 480px) {
     #header_content #cart_info {
         width: 300px;
         padding: 5px 10px;
-        background-color: #E40037;
+        background-color: #007dc6;
         color: white;
         text-align: right;
         float: right;
