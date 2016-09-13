@@ -134,11 +134,15 @@
     <!--     <bean id="solrAdminServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer"> -->
     <!--         <constructor-arg value="${solr.url.admin}"/> -->
     <!--     </bean> -->
-    <bean id="blCatalogSolrConfiguration" class="org.broadleafcommerce.core.search.service.solr.SolrConfiguration">
+
+<!-- Commented by Kiran start -->    
+<!--     <bean id="blCatalogSolrConfiguration"
+	class="org.broadleafcommerce.core.search.service.solr.SolrConfiguration">
         <constructor-arg name="solrServer" ref="${solr.source.primary}" />
     </bean>
-    <bean id="blSearchService" class="org.broadleafcommerce.core.search.service.solr.SolrSearchServiceImpl"/>
-
+    <bean id="blSearchService" class="org.broadleafcommerce.core.search.service.solr.SolrSearchServiceImpl"/> -->
+<!-- Commented by Kiran end -->
+ 
     <!-- When the Private Demo starts up with DDL set to create or create-drop, we need to make sure that we -->
     <!-- rebuild the Solr index. Otherwise, it will be out of sync and cause errors for people. -->
     <bean id="rebuildIndexJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
