@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <description>My Company's eCommerce Website</description>
-    <repositories>
+    <!-- <repositories>
         <repository>
             <id>public snapshots</id>
             <name>public snapshots</name>
@@ -33,7 +33,7 @@
             <name>public releases</name>
             <url>http://nexus.broadleafcommerce.org/nexus/content/groups/community-releases/</url>
         </repository>
-    </repositories>
+    </repositories> -->
     <build>
         <pluginManagement>
             <plugins>
@@ -474,21 +474,21 @@
                 <scope>test</scope>
             </dependency>
 
-            <dependency>
+            <!-- <dependency>
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-menu</artifactId>
                 <version>${blc.menu.version}</version>
                 <type>jar</type>
                 <scope>compile</scope>
-            </dependency>
+            </dependency> -->
 
-            <dependency>
+            <!-- <dependency>
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-sample-payment-gateway</artifactId>
                 <version>${broadleaf-sample-payment-gateway.version}</version>
                 <type>jar</type>
                 <scope>compile</scope>
-            </dependency>
+            </dependency> -->
 
             <dependency>
                 <groupId>javax.servlet</groupId>

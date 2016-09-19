@@ -72,14 +72,14 @@
     </filter-mapping>
 
     <!-- enable configured logging -->
-    <!-- <context-param>
+    <context-param>
         <param-name>log4jConfigLocation</param-name>
         <param-value>/WEB-INF/log4j.xml</param-value>
-    </context-param> -->
+    </context-param>
 
-   <!--  <listener>
+    <listener>
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
-    </listener> -->
+    </listener>
 
     <listener>
         <listener-class>org.broadleafcommerce.common.web.extensibility.MergeContextLoader</listener-class>
