@@ -25,7 +25,7 @@ mvn antrun:run@hsqldb-start &
 if [ -z ${JREBEL_PATH+x} ]; then JREBEL_AGENT=""; else JREBEL_AGENT="-agentpath:$JREBEL_PATH"; fi
 
 # Figure out a debug port
-if [ -z ${DEBUG_PORT+x} ]; then DEBUG_PORT="8001"; fi
+if [ -z ${DEBUG_PORT+x} ]; then DEBUG_PORT="8086"; fi
 
 if [ -z ${TOMCAT_MEMORY+x} ]; then TOMCAT_MEMORY="-Xmx1536M -XX:MaxPermSize=512M"; fi
 
