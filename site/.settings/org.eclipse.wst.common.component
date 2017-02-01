@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mycompany">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="core-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/core/core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="broadleaf-profile-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BroadleafCommerce Profile/BroadleafCommerce Profile">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="broadleaf-framework-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BroadleafCommerce Framework/BroadleafCommerce Framework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="broadleaf-common-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BroadleafCommerce Common Libraries/BroadleafCommerce Common Libraries">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="broadleaf-contentmanagement-module-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BroadleafCommerce CMS Module/BroadleafCommerce CMS Module">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="broadleaf-open-admin-platform-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BroadleafCommerce Open Admin Platform/BroadleafCommerce Open Admin Platform">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="broadleaf-framework-web-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BroadleafCommerce Framework Web/BroadleafCommerce Framework Web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="broadleaf-profile-web-4.0.11-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BroadleafCommerce Profile Web/BroadleafCommerce Profile Web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="mycompany"/>
+        <property name="java-output-path" value="/site/target/mycompany/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>
